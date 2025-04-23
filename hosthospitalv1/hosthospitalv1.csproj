@@ -1,0 +1,26 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net7.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.Mvc.Razor.RuntimeCompilation" Version="7.0.20" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="7.0.20">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Application\hosthospital.Core.Application.csproj" />
+    <ProjectReference Include="..\hosthospital.Core.Application\hosthospital.Core.Application.csproj" />
+    <ProjectReference Include="..\hosthospital.Core.Domain\hosthospital.Core.Domain.csproj" />
+    <ProjectReference Include="..\hosthospital.Infrastructure.Identity\hosthospital.Infrastructure.Identity.csproj" />
+    <ProjectReference Include="..\hosthospital.Infrastructure.Persitence\hosthospital.Infrastructure.Persistence.csproj" />
+    <ProjectReference Include="..\hosthospital.Infrastructure.Shared\hosthospital.Infrastructure.Shared.csproj" />
+  </ItemGroup>
+
+</Project>
